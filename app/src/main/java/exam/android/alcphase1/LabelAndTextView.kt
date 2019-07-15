@@ -22,14 +22,14 @@ class LabelAndTextView(context: Context, attrs: AttributeSet) : LinearLayout(con
                     this@LabelAndTextView.labelText = this.getText(R.styleable.LabelAndTextView_label) ?: ""
                     this@LabelAndTextView.valueText = this.getText(R.styleable.LabelAndTextView_value) ?: ""
                 } finally {
+                    recycle()
+                    this@LabelAndTextView.labelView = findViewById(R.id.label)
+                    this@LabelAndTextView.textValueView = findViewById(R.id.text)
 
+                    this@LabelAndTextView.labelView.text = this@LabelAndTextView.labelText
+                    this@LabelAndTextView.textValueView.text = this@LabelAndTextView.valueText
                 }
             }
-        this.labelView = findViewById(R.id.label)
-        this.textValueView = findViewById(R.id.text)
-
-        this.labelView.text = this@LabelAndTextView.labelText
-        this.textValueView.text = this@LabelAndTextView.valueText
     }
 
 
