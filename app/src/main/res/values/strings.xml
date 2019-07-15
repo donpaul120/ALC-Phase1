@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ALC 4 Phase1</string>
+    <string name="about_alc">About ALC</string>
+    <string name="my_profile">My Profile</string>
+    <string name="developer_name">Okeke Paul</string>
+    <string name="developer_slack_username">\@libra</string>
+    <string name="profile_image">profile_image</string>
+</resources>
